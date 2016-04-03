@@ -13,11 +13,11 @@ app.use(express.static(__dirname + '/public')); // set the static files location
  
 var port = process.env.PORT || 8080; // set our port
 
-var client = twilio('ACCOUNTSID', 'AUTHTOKEN');
-var twilio_number = 'YOUR-NUMBER';
+var client = twilio('ACd11013a987b635cc7699e5b42746ee30', 'c35239470719f8c191aed65ef4c63510');
+var twilio_number = '15034207096';
 
-var api_key = "YOUR-API-KEY";
-var appname = "YOUR-FLYBASE-APP";
+var api_key = "a38cb3b6-7080-499a-a497-ea525ff4e707";
+var appname = "exptwil";
 var collection = "smscontact";
 
 var messagesRef = require('flybase').init(appname, collection, api_key);
